@@ -43,6 +43,11 @@ int main() {
         }
 
     } while(n < 1 || n > 100);
+
+    if(n < 2) {
+        printf("NE\n");
+        return 0;
+    }
     
     
     float niz[100];
@@ -70,6 +75,11 @@ int main() {
                     daLiSePonavlja = true;
                 }
             }
+        }
+
+        if(!daLiSePonavlja) {
+            printf("NE\n");
+            return 0;
         }
     }
 
